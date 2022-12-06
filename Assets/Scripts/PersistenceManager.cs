@@ -5,6 +5,9 @@ using UnityEngine;
 public class PersistenceManager : MonoBehaviour
 {
     public static PersistenceManager Instance;
+
+    public string playerName;
+
     void Awake()
     {
         if(Instance != null)
