@@ -8,6 +8,7 @@ public class MainManager : MonoBehaviour
 {
     public Brick BrickPrefab;
     public int LineCount = 6;
+    public float difficulty = 2.0f;
     public Rigidbody Ball;
 
     public Text ScoreText;
@@ -59,7 +60,7 @@ public class MainManager : MonoBehaviour
                 forceDir.Normalize();
 
                 Ball.transform.SetParent(null);
-                Ball.AddForce(forceDir * 2.0f, ForceMode.VelocityChange);
+                Ball.AddForce(forceDir * difficulty, ForceMode.VelocityChange);
             }
         }
         else if (m_GameOver)

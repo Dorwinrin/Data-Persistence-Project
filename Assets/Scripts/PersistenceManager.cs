@@ -42,7 +42,6 @@ public class PersistenceManager : MonoBehaviour
 
     public void SaveBestScore(int points)
     {
-        Debug.Log(">>> SaveBestScore(" + points + ")");
         if (points > currentBestScore.score)
         {
             currentBestScore.score = points;
